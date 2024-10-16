@@ -282,23 +282,12 @@ strong {
   z-index: 2;
 }
 
-.site-news-detail-header {
-  background: transparent;
-  text-align: left;
-   padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .site-about-header {
   background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
 }
 
 .site-menu-header {
   background-image: url('../images/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg');
-}
-
-.site-news-header {
-  background-image: url('../images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg');
 }
 
 .site-contact-header {
@@ -455,9 +444,6 @@ strong {
 -----------------------------------------*/
 .menu,
 .about,
-.news,
-.related-news,
-.newsletter,
 .comments {
   background: var(--section-bg-color);
 }
@@ -486,114 +472,7 @@ strong {
   margin: 20px;
 }
 
-.newsletter-image {
-  border-radius: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  max-width: 450px;
-  max-height: 450px;
-}
 
-
-/*---------------------------------------
-  NEWS               
------------------------------------------*/
-.news-thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.news-thumb > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease-out;
-}
-
-.news-thumb > a:hover {
-  transform: scale(1.2);
-}
-
-.news-text-info {
-  background: var(--section-bg-color);
-  position: relative;
-  z-index: 2;
-  padding: 20px;
-  transition: all 0.3s ease-out;
-}
-
-.related-news .news-text-info {
-  background: var(--white-color);
-}
-
-.news-text-info-large {
-  background: linear-gradient(to top, var(--dark-color), transparent 90%);
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.news-text-info-large .news-title-link {
-  color: var(--white-color);
-}
-
-.news-title-link {
-  color: var(--news-title-color);
-}
-
-.news-image {
-  display: block;
-  width: 100%;
-  transition: all 0.3s ease-out;
-}
-
-.news-image:hover {
-  transform: scale(1.2);
-}
-
-.category-tag,
-.menu-tag {
-  background: var(--dark-color);
-  border-radius: var(--border-radius-default);
-  color: var(--white-color);
-  font-size: var(--category-font-size);
-  display: inline-block;
-  padding: 4px 12px;
-}
-
-.category-tag {
-  margin-bottom: 5px;
-}
-
-.comment-form {
-  margin-bottom: 60px;
-}
-
-.news-author {
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  margin-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 30px;
-}
-
-.news-author:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.news-author-image {
-  border-radius: 100px;
-  object-fit: cover;
-  width: 70px;
-  height: 70px;
-}
 
 
 /*---------------------------------------
@@ -862,10 +741,7 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
-  .newsletter-image {
-    max-width: 310px;
-    max-height: 310px;
-  }
+
 
   .hero-carousel .carousel-control-prev,
   .hero-carousel .carousel-control-next {
