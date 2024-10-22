@@ -158,6 +158,7 @@ strong {
 }
 
 
+
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
@@ -283,7 +284,7 @@ strong {
 }
 
 .site-about-header {
-  background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
+  background-image: url('../images/header/food.png');
 }
 
 .site-menu-header {
@@ -577,7 +578,7 @@ strong {
   FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.jpg');
+  background-image: url('../images/header/pexels-bertellifotografia-17001738.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
