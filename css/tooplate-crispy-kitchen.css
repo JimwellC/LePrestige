@@ -288,11 +288,11 @@ strong {
 }
 
 .site-menu-header {
-  background-image: url('../images/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg');
+  background-image: url('../images/header/menu\ header.png');
 }
 
 .site-contact-header {
-  background-image: url('../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg');
+  background-image: url('../images/istockphoto-157727961-612x612.jpg');
 }
 
 .overlay {
@@ -517,7 +517,6 @@ strong {
 #BookingModal .modal-content::before {
   content: "";
   background-color: var(--white-color);
-  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
