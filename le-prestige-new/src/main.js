@@ -7,8 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './assets/css/tooplate-crispy-kitchen.css';
 
-// Import Bootstrap JavaScript for any JS-based Bootstrap components
+// Import Bootstrap and jQuery
+import 'bootstrap/dist/css/bootstrap.min.css';  // Ensure the Bootstrap CSS is already imported
 import 'bootstrap';
-// Custom JavaScript
+import './assets/js/jquery.min.js';  // Import jQuery
+import './assets/js/bootstrap.bundle.min.js';  // Import Bootstrap JavaScript
+
 
 createApp(App).use(router).mount('#app')
