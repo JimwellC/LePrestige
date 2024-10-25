@@ -28,7 +28,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/waffles.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/waffles.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Waffle Bliss</h4>
@@ -41,7 +41,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/americanbf.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/americanbf.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Classic American</h4>
@@ -54,7 +54,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/omelette.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/omelette.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Omelette Delight</h4>
@@ -66,7 +66,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/Beef_tapa.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/Beef_tapa.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Beef Tapa</h4>
@@ -79,7 +79,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/Italian_Breakfast_Bake.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/Italian_Breakfast_Bake.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Italian Breakfast</h4>
@@ -92,7 +92,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/breakfast/Italian_Poached_Eggs.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/breakfast/Italian_Poached_Eggs.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Poached Eggs</h4>
@@ -117,7 +117,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/1.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/1.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Golden Glaze</h4>
@@ -130,7 +130,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/2.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/2.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Beef Wellington</h4>
@@ -143,7 +143,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/3.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/3.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Lasagna Royale</h4>
@@ -155,7 +155,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/Cobb_salad.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/Cobb_salad.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Cobb Salad</h4>
@@ -168,7 +168,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/Quinoa_Salad.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/Quinoa_Salad.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Quinoa Salad</h4>
@@ -193,7 +193,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/dinner/1.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/dinner/1.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Seafood Set</h4>
@@ -207,7 +207,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/dinner/2.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/dinner/2.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Premium Steak</h4>
@@ -220,7 +220,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/dinner/3.jpg" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/dinner/3.jpg" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">Salmon Set</h4>
@@ -233,7 +233,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
-                    <img src="images/lunch/Teriyaki_Chicken_Broccoli.png" class="img-fluid menu-image" alt="">
+                    <img src="../assets/images/lunch/Teriyaki_Chicken_Broccoli.png" class="img-fluid menu-image" alt="">
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
                         <h4 class="mb-0">TChicken Broccoli</h4>

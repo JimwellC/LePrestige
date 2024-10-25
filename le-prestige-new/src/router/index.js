@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import IndexComponent from '../components/IndexComponent.vue';
-import ContactComponent from '../components/MenuComponent.vue';
-import MenuComponent from '../components/ContactComponent.vue';
+import MenuComponent from '../components/MenuComponent.vue';
+import ContactComponent from '../components/ContactComponent.vue';
 
 const routes = [
   { path: '/', component: IndexComponent },

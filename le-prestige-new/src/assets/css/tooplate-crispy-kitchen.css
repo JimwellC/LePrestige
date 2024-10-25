@@ -517,10 +517,6 @@ strong {
 #BookingModal .modal-content::before {
   content: "";
   background-color: var(--white-color);
-  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
   width: 60%;
   height: 100%;
   position: absolute;
@@ -566,10 +562,6 @@ strong {
 }
 
 .BgImage {
-  background-image: url('../images/alex-haney-CAhjZmVk5H4-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   height: 500px;
 }
 
@@ -725,8 +717,6 @@ strong {
   }
 
   #BookingModal .modal-content::before {
-    background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash-mobile.jpg');
-    background-position: bottom;
     top: auto;
     left: 0;
     bottom: 0;

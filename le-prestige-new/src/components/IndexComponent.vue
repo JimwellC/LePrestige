@@ -61,9 +61,8 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
                     <div class="menu-image-wrap">
-                        <img src="images/breakfast/americanbf.jpg" class="img-fluid menu-image" alt="">
+                        <img src="../assets/images/breakfast/americanbf.jpg" class="img-fluid menu-image" alt="">
 
-                        <span class="menu-tag bg-warning">Breakfast</span>
                     </div>
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
@@ -91,9 +90,8 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
                     <div class="menu-image-wrap">
-                        <img src="images/lunch/3.jpg" class="img-fluid menu-image" alt="">
+                        <img src="../assets/images/lunch/3.jpg" class="img-fluid menu-image" alt="">
 
-                        <span class="menu-tag bg-warning">Lunch</span>
                     </div>
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
@@ -121,9 +119,8 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="menu-thumb">
                     <div class="menu-image-wrap">
-                        <img src="images/dinner/2.jpg" class="img-fluid menu-image" alt="">
+                        <img src="../assets/images/dinner/2.jpg" class="img-fluid menu-image" alt="">
 
-                        <span class="menu-tag bg-warning">Dinner</span>
                     </div>
 
                     <div class="menu-info d-flex flex-wrap align-items-center">
@@ -185,9 +182,8 @@
 
                 
                 <div class="col-lg-6 col-12">
-                    <a href="menu.html" class="custom-btn btn btn-dark mt-3">Check out Menu</a>
-
-                <a href="contact.html" class="custom-btn btn btn-danger mt-3 ms-3">Contact Us</a>
+                  <router-link to="/menu" class="custom-btn btn btn-dark mt-3">Check out Menu</router-link>
+                  <router-link to="/contact" class="custom-btn btn btn-danger mt-3 ms-3">Contact Us</router-link>
             </div>
 
         </div>
@@ -333,6 +329,3 @@ export default {
 };
 </script>
 
-<style scoped>
-@import '../assets/css/tooplate-crispy-kitchen.css'
-</style>
