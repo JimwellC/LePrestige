@@ -7,12 +7,9 @@ import Contact from '../components/Contact.vue';
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    component: Home
-  },
-  { path: '/Menu', component: Menu },
-  { path: '/Contact', component: Contact }
+  { path: '/', component: Home },
+  { path: '/contact', component: Contact },
+  { path: '/menu', component: Menu }
 ]
 
 const router = new VueRouter({

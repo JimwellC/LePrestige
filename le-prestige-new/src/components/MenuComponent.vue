@@ -18,235 +18,29 @@
     <div class="overlay"></div>
 </header>
 
-<section class="menu section-padding">
-    <div class="container">
-        <div class="row">
-
+<section v-for="category in categories" :key="category" class="menu section-padding">
+        <div class="container">
+          <div class="row">
             <div class="col-12">
-                <h2 class="mb-lg-5 mb-4">Breakfast Menu</h2>
+              <h2 class="mb-lg-5 mb-4">{{ category }} Menu</h2>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/waffles.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Waffle Bliss</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>200</span>
-
-                    </div>
+            <div
+              v-for="(item, index) in filteredMenuItems(category)"
+              :key="index"
+              class="col-lg-4 col-md-6 col-12"
+            >
+              <div class="menu-thumb">
+                <!-- Add http://localhost:5000 before item.image to access files from server -->
+                <img :src="`http://localhost:5000${item.image}`" class="img-fluid menu-image" :alt="item.name" />
+                <div class="menu-info d-flex flex-wrap align-items-center">
+                  <h4 class="mb-0">{{ item.name }}</h4>
+                  <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>{{ item.price }}</span>
                 </div>
+              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/americanbf.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Classic American</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>250</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/omelette.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Omelette Delight</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>240</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/Beef_tapa.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Beef Tapa</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>200</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/Italian_Breakfast_Bake.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Italian Breakfast</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>260</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/breakfast/Italian_Poached_Eggs.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Poached Eggs</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>230</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-
-
-</section>
-
-<section class="menu section-padding">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-12">
-                <h2 class="mb-lg-5 mb-4">Lunch Menu</h2>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/1.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Golden Glaze</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>350</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/2.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Beef Wellington</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>360</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/3.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Lasagna Royale</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>300</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/Cobb_salad.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Cobb Salad</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>190</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/Quinoa_Salad.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Quinoa Salad</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>205</span>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="menu section-padding">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-12">
-                <h2 class="mb-lg-5 mb-4">Dinner Menu</h2>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/dinner/1.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Seafood Set</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>220</span>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/dinner/2.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Premium Steak</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>230</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/dinner/3.jpg" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">Salmon Set</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>215</span>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="menu-thumb">
-                    <img src="../assets/images/lunch/Teriyaki_Chicken_Broccoli.png" class="img-fluid menu-image" alt="">
-
-                    <div class="menu-info d-flex flex-wrap align-items-center">
-                        <h4 class="mb-0">TChicken Broccoli</h4>
-
-                        <span class="price-tag bg-white shadow-lg ms-4"><small>₱</small>205</span>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+      </section>
 
 </main>
 
@@ -381,7 +175,50 @@
   </template>
   
   <script>
-  export default {
-    name: "MenuComponent",
-  };
-  </script>
+import axios from '@/api/axios';
+
+export default {
+  name: 'MenuComponent',
+  data() {
+    return {
+      menuItems: [],
+      categories: ['Breakfast', 'Lunch', 'Dinner'],
+    };
+  },
+  methods: {
+    async fetchMenuItems() {
+      try {
+        const response = await axios.get('/menu');
+        this.menuItems = response.data;
+      } catch (error) {
+        console.error("Error fetching menu items:", error);
+      }
+    },
+    filteredMenuItems(category) {
+      return this.menuItems.filter(item => item.category.toLowerCase() === category.toLowerCase());
+    }
+  },
+  created() {
+    this.fetchMenuItems();
+  }
+};
+</script>
+
+<style scoped>
+.menu-thumb img {
+  width: 100%;
+  height: 350px; /* Adjust height to create uniformity */
+  object-fit: cover; /* Crop the image if it doesn't fit the exact dimensions */
+  border-radius: 8px; /* Rounded corners to match the website style */
+}
+
+.menu-info h4 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.price-tag {
+  font-size: 1em;
+  font-weight: bold;
+}
+</style>
