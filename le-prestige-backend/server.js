@@ -6,7 +6,9 @@ const path = require('path');
 const app = express();
 const PORT = 5000;
 
-mongoose.connect('mongodb://localhost:27017/menuDB', { useNewUrlParser: true, useUnifiedTopology: true });
+const Contact = require('./models/contact');
+
+mongoose.connect('mongodb://localhost:27017/menuDB');
 
 app.use(cors());
 app.use(express.json());
@@ -31,10 +33,25 @@ const menuSchema = new mongoose.Schema({
 });
 const Menu = mongoose.model('Menu', menuSchema);
 
+
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
+
 // Get all menu items
 app.get('/menu', async (req, res) => {
   const menuItems = await Menu.find();
   res.json(menuItems);
+});
+
+// GET route to retrieve all contact submissions
+app.get('/contacts', async (req, res) => {
+  try {
+    const contacts = await Contact.find();
+    res.json(contacts);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch contact information' });
+  }
 });
 
 // Add a menu item with an image
@@ -49,6 +66,18 @@ app.post('/menu', upload.single('image'), async (req, res) => {
   await newItem.save();
   res.json(newItem);
 });
+
+// POST route to add a new contact submission
+app.post('/contacts', async (req, res) => {
+  try {
+    const contact = new Contact(req.body);
+    const savedContact = await contact.save();
+    res.json(savedContact);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to save contact information' });
+  }
+});
+
 
 // Update an item
 app.put('/menu/:id', upload.single('image'), async (req, res) => {

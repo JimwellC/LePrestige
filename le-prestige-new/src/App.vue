@@ -17,24 +17,24 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav mx-auto">
-    <li class="nav-item">
-      <router-link class="nav-link "  to="/" exact active-class="active">Home</router-link>
-    </li>
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <router-link class="nav-link "  to="/" exact active-class="active">Home</router-link>
+                  </li>
 
-    <li class="nav-item">
-      <router-link class="nav-link " to="/Menu" active-class="active">Menu</router-link>
-    </li>
+                  <li class="nav-item">
+                    <router-link class="nav-link " to="/Menu" active-class="active">Menu</router-link>
+                  </li>
 
-    <li class="nav-item">
-      <router-link class="nav-link " to="/Contact" active-class="active">Contact</router-link>
-    </li>
-  </ul>
-</div>
+                  <li class="nav-item">
+                    <router-link class="nav-link " to="/Contact" active-class="active">Contact</router-link>
+                  </li>
+                </ul>
+              </div>
 
-                <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
-                </div>
+            <div class="d-none d-lg-block">
+                <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+            </div>
 
             </div>
         </nav>

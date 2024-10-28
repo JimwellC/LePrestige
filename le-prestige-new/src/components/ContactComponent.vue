@@ -22,40 +22,38 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-12">
-                            <h2 class="mb-4">Leave a message</h2>
-                        </div>
+                        <h2 class="text-center mb-4">Contact Us</h2>
 
-                        <div class="col-lg-6 col-12">
-                            <form class="custom-form contact-form row" action="#" method="post" role="form">
-                                <div class="col-lg-6 col-6">
-                                    <label for="contact-name" class="form-label">Full Name</label>
+                            <!-- Success Alert -->
+                            <div v-if="alertMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ alertMessage }}
+                            <button type="button" class="btn-close" @click="closeAlert"></button>
+                            </div>
 
-                                    <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Your Name" required>
-                                </div>
+                            <!-- Contact Form -->
+                            <form @submit.prevent="submitContact" class="bg-light p-4 rounded shadow-sm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input v-model="contact.name" type="text" class="form-control" id="name" placeholder="Enter your name" required />
+                            </div>
 
-                                <div class="col-lg-6 col-6">
-                                    <label for="contact-phone" class="form-label">Phone Number</label>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input v-model="contact.email" type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                            </div>
 
-                                    <input type="telephone" name="contact-phone" id="contact-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
-                                </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input v-model="contact.phone" type="tel" class="form-control" id="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                            </div>
 
-                                <div class="col-12">
-                                    <label for="contact-email" class="form-label">Email</label>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea v-model="contact.message" class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                            </div>
 
-                                    <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required="">
-
-                                    <label for="contact-message" class="form-label">Message</label>
-
-                                    <textarea class="form-control" rows="5" id="contact-message" name="contact-message" placeholder="Your Message"></textarea>
-                                </div>
-
-                                <div class="col-lg-5 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Send</button>
-                                </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
                             </form>
-                        </div>
-
                         <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
 
                             <h5>Weekdays</h5>
@@ -222,8 +220,45 @@
   </template>
   
   <script>
-  export default {
-    name: "ContactComponent",
-  };
-  </script>
+import api from '@/api/axios';
+
+export default {
+  name: 'ContactComponent',
+  data() {
+    return {
+      contact: {
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      },
+      alertMessage: ''
+    };
+  },
+  methods: {
+    async submitContact() {
+      try {
+        await api.post('/contacts', this.contact);
+        this.alertMessage = 'Thank you for contacting us!';
+        this.contact = { name: '', email: '', phone: '', message: '' }; // Reset form fields
+      } catch (error) {
+        console.error('Error submitting contact information:', error);
+      }
+    },
+    closeAlert() {
+      this.alertMessage = '';
+    }
+  }
+};
+</script>
+
+<style scoped>
+.container {
+  max-width: 600px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+</style>
   
