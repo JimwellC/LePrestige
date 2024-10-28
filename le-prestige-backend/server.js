@@ -9,7 +9,7 @@ const PORT = 5000;
 const Contact = require('./models/contact');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/menuDB', {
+mongoose.connect('mongodb+srv://jimwelltuazon6:QMOUqbOMZpPoh1g9@le-prestige.boi3u.mongodb.net/menuDB', {
 
 });
 
