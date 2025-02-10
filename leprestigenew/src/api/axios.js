@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:5000', // Backend server URL
+  baseURL: 'http://localhost:5001', // Backend server URL
 });
